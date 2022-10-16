@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizzacı</title>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="assets/css/reboot.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+      <img src="assets/images/pizzalogo.png" width="300" alt="Pizza Logo" />
+      <h1>Pizzacı</h1>
+    </header>
+
+    <section class="register-form">
+      <h2>Kayıt Sayfası</h1>
+                  <p>
+                    Kaydolmak için lütfen aşağıdaki formu doldurunuz. </p>
+                </header>
+          
+                <form class="register-form">
+                  <h2>Kayıt Bilgileri</h2>
+  
+                  <div class="register-inputs">
+
+                  <div class="register-input">
+                    <label for="name">İsim:</label>
+                    <input type="text" id="name" placeholder="İsim" pattern="[A-Za-z]{2,}" required autofocus />
+                  </div>
+
+                  <div class="register-input">
+                    <label for="surname">Soyisim:</label>
+                    <input type="text" id="surname" placeholder="Soyisim"  />
+                  </div>
+
+                  <div class="register-input">
+                  <label for="phone">Telefon:</label>
+                  <input type="tel" id="phone" placeholder="Telefon numaranızı 0 ile başlayarak 11 haneli olarak yazınız" minlength="11" maxlength="11" required/>
+                  </div>
+                  
+                  <div class="register-input">
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" placeholder="you@example.com" required />
+                  </div>
+  
+                  <div class="register-input">
+                  <label for="password">Şifre:</label>
+                  <input type="password" id="password" minlength="8" required />
+                  </div>
+                </div>
+  
+                  <button class="button" type="submit" formaction="../Order-pizza/login.html" >Kaydol!</button>
+
+
+                <div class="register-consent">
+                <input type="checkbox" id="sms" />
+                <label for="sms"> Kampanyalardan haberdar olmak için sms gönderimini onaylıyorum. </label>
+                </div>
+                <div class="register-consent">
+                <input type="checkbox" id="emailCheckbox" />
+                <label for="emailCheckbox"> Kampanyalardan haberdar olmak için e-posta gönderimini onaylıyorum. </label>
+                </div>
+
+                </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizzacı</title>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="assets/css/reboot.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+      <img src="assets/images/pizzalogo.png" width="300" alt="Pizza Logo" />
+      <h1>Pizzacı</h1>
+      
+    </header>
+
+    <section class="checkout-content">
+      <h2>Ödeme Sayfası</h2>
+                <p>Lütfen teslimat ve ödeme bilgilerini giriniz.</p>
+        
+              <form class="checkout-form">
+                <h2>Fatura Adresi</h2>
+        
+                <div class="checkout-input">
+                  <label for="Name">İsim</label>
+                  <input type="text" id="Name" placeholder="İsim" required />
+                </div>
+
+                <div class="checkout-input">
+                  <label for="Surname">Soyisim</label>
+                  <input type="text" id="Surname" placeholder="Soyisim" required />
+                </div>
+      
+                <div class="checkout-input">
+                  <label for="email">E-posta</label>
+                  <input type="email" id="email" placeholder="you@example.com" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="address">Adres</label>
+                  <input type="text" id="address" placeholder="Mahalle, Sokak, Bina No, Daire No" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="city">Şehir</label>
+                  <select id="city" required>
+                    <option value="">Şehir seçiniz</option>
+                    <option>İstanbul</option>
+                    <option>Ankara</option>
+                    <option>İzmir</option>
+                  </select>
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="county">İlçe</label>
+                  <select id="county" required>
+                    <option value="">Seçiniz</option>
+                    <option>Beşiktaş</option>
+                    <option>Kadıköy</option>
+                    <option>Üsküdar</option>
+                    <option>Çankaya</option>
+                    <option>Keçiören</option>
+                    <option>Etimesgut</option>
+                    <option>Karşıyaka</option>
+                    <option>Narlıdere</option>
+                    <option>Bornova</option>
+                  </select>
+                </div>
+        
+                <div>
+                  <input type="checkbox" id="same-address" />
+                  <label for="same-address">Fatura adresi ile teslimat adresi aynı</label>
+                </div>
+      
+                <h2>Ödeme Bilgileri</h2>
+        
+                <div class="radio-group">
+                  <div class="checkout-radio">
+                    <input id="credit" name="paymentMethod" type="radio" required />
+                    <label for="credit">Kredi Kartı</label>
+                  </div>
+        
+                  <div class="checkout-radio">
+                    <input id="debit" name="paymentMethod" type="radio" required />
+                    <label for="debit">Banka Kartı</label>
+                  </div>
+        
+                  <div class="checkout-radio">
+                    <input id="paypal" name="paymentMethod" type="radio" required />
+                    <label for="paypal">Havale/EFT</label>
+                  </div>
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="cardNumber">Kart Numarası</label>
+                  <input type="text" id="cardNumber" required />
+                </div>
+
+                <div class="checkout-input">
+                  <label for="nameOnCard">Kart Üzerindeki İsim</label>
+                  <input type="text" id="nameOnCard" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="expDate">Son Kullanma Tarihi</label>
+                  <input type="text" id="expDate" required />
+                </div>
+        
+                <div class="checkout-input">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="Kartın arkasında bulunan numarayı giriniz." required />
+                </div>
+
+                      <div class="checkout-installments">
+                        <h3>Taksit Seçenekleri</h3>
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption1" type="radio" />
+                        <label for="installments">Peşin Ödeme</label>
+
+
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption2" type="radio" />
+                        <label for="installments">3 Taksit</label>
+
+ 
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption3" type="radio" />
+                        <label for="installments">6 Taksit</label>
+
+                        <div class="checkout-radio">
+                        <input id="installments" name="installmentsOption4" type="radio" />
+                        <label for="installments">9 Taksit</label>
+                        </div>
+                      </div>
+
+                      <div class="checkout-checkbox">
+                        <input type="checkbox" id="save-info" />
+                        <label for="save-info">Kart Bilgierimi Kaydet</label>
+                      </div>
+            <button class="button" type="submit" formaction="../Order-pizza/success.html">İleri</button>
+            <button class="button2" type="submit" formaction="../Order-pizza/pizza-dough.html">Geri</button>
+          </form>
+        </section>
+</body>
+</html>
